@@ -15,6 +15,64 @@
             background: #f0f0f0;
             font-family: Arial, sans-serif;
         }
+        nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Major Mono Display;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: Major Mono Display;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6b51ca;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 30px;
+}
         .contact-container {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -50,6 +108,19 @@
     </style>
 </head>
 <body>
+
+    <header>
+
+        <nav id="menuList" class="navbar">
+            <h1 class="logo">GKASH</h1>
+            <div class="container">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
     <div class="contact-container">
         <h2>Contact Us</h2>
         <form>
