@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #121212;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Major Mono Display;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: Major Mono Display;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6b51ca;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 30px;
+}
+
+/*-----About part------*/
+
+.main-about {
+    position: relative;
+    top: 50px;
+    margin: 4em;
+    padding: 5em;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 150px 20px;
+    background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+}
+
+.about-content h2 {
+    font-size: 50px;
+    font-family: Major Mono Display;
+    text-align: left;
+}
+
+
+.about-content p {
+    font-size: 20px;
+    text-align: left;
+}
+
+/*------Social icon-----*/
+
+.social {
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.social i {
+    color: white;
+}
+
+.social i:hover {
+    color: #6b51ca;
+    transition: .5s;
+}
+
+
+
+
+
+/*-----project part-----*/
+
+.top-header {
+    position: relative;
+    padding: 5em;
+    top: 100px;
+}
+
+.top-header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Major Mono Display;
+}
+
+.project-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #201f22;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-box>i {
+    font-size: 50px;
+    color: #6b51ca;
+    margin-bottom: 25px;
+}
+
+.project-box label {
+    font-size: 15px;
+    color: white;
+}
+
+.project-box::after,
+.contact-info::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: #6b51ca;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 0.1;
+}
+
+.project-box:hover.project-box::after,
+.contact-info:hover.contact-info::after {
+    bottom: 0;
+}
+
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label,
+.project-box:hover.project-box>button {
+    color: #201f22;
+    z-index: 2;
+    font-family: Major Mono Display;
+}
+
+.top-header span {
+    color: #fff;
+}
+
+.btn {
+    size: 20px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*----experience----*/
+
+.main-experience {
+    position: relative;
+    top: 50px;
+    margin: 4em;
+    padding: 2em;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px 390px;
+    background-color: linear-gradient (135deg, rgba(36, 34, 34, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+}
+
+.main-experience h2 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: Major Mono Display;
+}
+
+.main-experience h1 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Major Mono Display;
+}
+
+
+.first {
+    margin: 9em;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px 40px;
+}
+
+.first:hover {
+    transition: .5s;
+    background-color: rgb(37, 37, 37);
+}
+
+.first h3 {
+    margin: .5em;
+    font-size: 20px;
+    font-family: Major Mono Display;
+    text-align: right;
+
+}
+
+.first h6 {
+    margin: .1em;
+    padding: .4em;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    font-weight: lighter;
+    color: rgb(172, 169, 169);
+}
+
+.first p {
+    position: absolute;
+    top: 164px;
+    margin: 5em;
+    padding: 4em;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: Major Mono Display;
+}
+
+.second {
+    margin: 9em;
+    padding: .4em;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px 20px;
+}
+
+.second h6 {
+    margin: .1em;
+    padding: .4em;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    font-weight: lighter;
+    color: rgb(172, 169, 169);
+}
+
+.second h3 {
+    margin: .5em;
+    font-size: 15px;
+    font-family: Major Mono Display;
+    text-align: right;
+}
+
+
+.second p {
+    position: absolute;
+    top: 380px;
+    margin: 7em;
+    padding: 2em;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: Major Mono Display;
+}
+
+.second:hover {
+    transition: .5s;
+    background-color: rgb(37, 37, 37);
+}
+
+.third {
+    margin: 9em;
+    padding: .4em;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px 20px;
+}
+
+.third h6 {
+    margin: .1em;
+    padding: .4em;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    font-weight: lighter;
+    color: rgb(172, 169, 169);
+}
+
+.third h3 {
+    margin: .5em;
+    font-size: 15px;
+    font-family: Major Mono Display;
+    text-align: right;
+}
+
+
+.third p {
+    position: absolute;
+    top: 605px;
+    margin: 7em;
+    padding: 2em;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: Major Mono Display;
+}
+
+.third:hover {
+    transition: .5s;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+/*------footer------*/
+
+footer {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
+    border: 1px solid rgba(151, 25, 189, 0.18);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
+    position: relative;
+    top: 250px;
+
+}
+
+footer p {
+    font-weight: lighter;
+}
+
+
+/*--------figcaption------*/
+
+figcaption {
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+
+/***************************************************************************************/
+
+/*-----ANIMATE ON SCROLL------*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.main-about {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 40%;
+}
+
+.main-experience {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.projecttitle {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.first {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.second {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.third {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.project-box {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+
+/*------media screen-----*/
+
+@media (max-width:839px) {
+    .container {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        left: 299px;
+    }
+
+    .about-content h2 {
+        font-size: 20px;
+        font-family: Major Mono Display;
+        text-align: left;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .main-experience h2 {
+        text-align: left;
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: Major Mono Display;
+    }
+
+    .main-experience h1 {
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Major Mono Display;
+    }
+
+    .top-header h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: Major Mono Display;
+    }
+
+    .logo {
+        position: relative;
+        left: 80px;
+    }
+
+    .LOGO {
+        text-align: center;
+        margin: 9em;
+        padding-right: -9em;
+        position: relative;
+        left: -180px;
+        display: block;
+        align-items: center;
+    }
+
+    .title {
+        position: relative;
+        top: 95px;
+        left: 195px;
+        font-size: 30px;
+        font-family: Major Mono Display;
+    }
+
+
+
+}
+
+
+@media (max-width:400px) {
+    .container {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        left: 55px;
+    }
+
+    .about-content h2 {
+        font-size: 20px;
+        font-family: Major Mono Display;
+        text-align: left;
+    }
+
+    .main-about {
+        position: relative;
+        top: 50px;
+        margin: .5em;
+        padding: 5em;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        border-radius: 150px 20px;
+        background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+    }
+
+
+    .about-content p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .top-header h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: Major Mono Display;
+    }
+
+    .project-box {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        height: 250px;
+        background: transparent;
+        border: 2px solid #201f22;
+        border-radius: 20px;
+        box-shadow: 1px 8px 10px 2px var(--first-shadow);
+        overflow: hidden;
+        cursor: pointer;
+        
+    }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #201f22;
+    /* Track color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6b51ca;
+    /* Scrollbar color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color when hovering */
+}
