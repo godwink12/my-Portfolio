@@ -4,7 +4,10 @@ This project is going to be the place where I will be showcasing all of my proje
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
+## Usage
+To start the application, run:
+```bash
+npm start
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
