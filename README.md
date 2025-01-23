@@ -1,6 +1,6 @@
-# Project Title
+# MY PORTFOLIO
 
-A brief description of what this project does and its purpose.
+This project is going to be the place where I will be showcasing all of my project
 
 ## Table of Contents
 - [Installation](#installation)
