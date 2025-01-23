@@ -1,134 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
-    border-radius: 5px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-family: Major Mono Display;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-    font-family: Major Mono Display;
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #6b51ca;
-    transition: .3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-}
-
-.menu-icon {
-    display: none;
-}
-
-.menu-icon {
-    color: #fff;
-    font-size: 30px;
-}
-        .contact-container {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-        }
-        .contact-container h2 {
-            margin-bottom: 20px;
-        }
-        .contact-container input, .contact-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.2);
-        }
-        .contact-container button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-        .contact-container button:hover {
-            background: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <title>Document</title>
 </head>
-<body>
 
+<body>
     <header>
 
         <nav id="menuList" class="navbar">
             <h1 class="logo">GKASH</h1>
             <div class="container">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
+                <a href="index.html">About</a>
                 <a href="#">Contact</a>
             </div>
         </nav>
     </header>
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+
+    <div class="container1">
+        <div class="contact">
+            <h1>CONTACT</h1>
+            <p>Can't wait to get in touch with you</p>
+            <form>
+
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+            </form>
+            <button>Send</button>
+            <div class="social">
+                <a href="https://www.instagram.com/urfavourite_congoleseboy/"><i class="uil uil-instagram"></i></a>
+                <a href="https://github.com/godwink12"><i class="uil uil-github"></i></a>
+                <a href="https://x.com/GodwinKadima"><i class="uil uil-twitter"></i></a>
+            </div>
+
+        </div>
+
     </div>
+
+    <div class="background-png">
+        <img src="img/pngegg (17).png" alt="" >
+        <img src="img/pngegg (15).png" alt="">
+        <img src="img/pngegg (14).png" alt="" id="image-right" >
+        <img src="img/pngegg (13).png" alt="" id="image-right">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Godwin Kadima</p>
+    </footer>
+
 </body>
+
 </html>
