@@ -12,10 +12,11 @@
 
 body {
     min-height: 100vh;
-    background-color: #121212;
+    background-color: #080808;
     background-size: cover;
     background-position: center;
     color: white;
+    max-width: fit-content;
 }
 
 html {
@@ -127,8 +128,35 @@ nav {
     transition: .5s;
 }
 
+/*----- Skills------*/
 
+.skills{
+    justify-content: center;
+    margin: 9em;
+}
 
+.skills h1{
+    font-family: Major Mono Display;
+    font-size: 60px;
+    text-align: center;
+}
+
+.skillicon{
+     font-size: 60px;
+     text-align: center;
+     margin: 1em;
+}
+
+.skillicon:hover{
+    color: #6b51ca;
+    transition: .5s;
+}
+
+hr{
+    width: 70%;
+    border-radius: 50px;
+    border: 2px solid;
+}
 
 
 /*-----project part-----*/
@@ -439,6 +467,18 @@ figcaption {
     animation-range: entry 0 cover 40%;
 }
 
+hr{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%; 
+}
+
+.skillicon{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
 @keyframes slide {
     from {
         opacity: 0;
@@ -481,11 +521,18 @@ figcaption {
     animation-range: entry 0 cover 40%;
 }
 
+.skills h1{
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
 
 
 /*------media screen-----*/
 
 @media (max-width:839px) {
+
     .container {
         display: none;
     }
@@ -548,8 +595,34 @@ figcaption {
         font-size: 30px;
         font-family: Major Mono Display;
     }
+   
+    .project-container{
+        position: relative;
+        left: 80px;
+        width: 30%;
+        display:flow-root;
+        justify-content: center;
+        margin: 50px;
+    }
 
-
+    .project-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200%;
+        height: 250px;
+        background: transparent;
+        border: 2px solid #201f22;
+        border-radius: 20px;
+        box-shadow: 1px 8px 10px 2px var(--first-shadow);
+        overflow: hidden;
+        cursor: pointer;
+    }
+     
+    .main-about{
+       align-items: center;
+    }
 
 }
 
@@ -615,7 +688,7 @@ figcaption {
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 2px;
     /* Width of the scrollbar */
 }
 
