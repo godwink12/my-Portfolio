@@ -81,4 +81,10 @@ nav {
     position: relative;
     top: 155px; /* Adjust this value to move the section down to avoid overlap with the fixed nav */
     z-index: 1; /* Ensure this section is above the background */
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 150px 20px;
+    background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
 }
