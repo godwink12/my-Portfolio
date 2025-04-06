@@ -71,3 +71,14 @@ nav {
 .navbar a:hover::before {
     width: 100%;
 }
+
+/*---upcoming section---*/
+.upcoming {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: source code pro, monospace;
+    position: relative;
+    top: 155px; /* Adjust this value to move the section down to avoid overlap with the fixed nav */
+    z-index: 1; /* Ensure this section is above the background */
+}
