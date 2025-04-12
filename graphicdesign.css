@@ -27,7 +27,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 30px 100px;
     background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
     border-radius: 5px;
     -webkit-backdrop-filter: blur(10px);
@@ -49,13 +49,14 @@ nav {
 
 .navbar a {
     position: relative;
-    left: 390px;
     font-size: 15px;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
+    margin-left: 40px;
     font-family: Major Mono Display;
 }
+
 
 .navbar a::before {
     content: '';
@@ -125,27 +126,7 @@ nav {
     animation: slide 16s infinite;
 }
 
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
 
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 0.75;
-}
-.slider-nav a:hover{
-    color: #6b51ca;
-    transition: 5s;
-}
 
 @keyframes slide {
     0%{
@@ -327,10 +308,8 @@ footer p {
 
     .LOGO {
         text-align: center;
-        margin: 9em;
-        padding-right: -9em;
         position: relative;
-        left: -180px;
+        left: -275px;
         display: block;
         align-items: center;
     }
@@ -347,14 +326,8 @@ footer p {
     }
 
     .navbar a {
-        position: relative;
-        left: -120px;
-        font-size: 15px;
-        color: #fff;
-        font-weight: 500;
-        text-decoration: none;
-        margin-left: 40px;
-        font-family: Major Mono Display;
+        font-size: 20px;
+
     }
 
     .container {

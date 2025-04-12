@@ -143,6 +143,12 @@ footer p {
     align-items: center;
     row-gap: 50px;
     }
+
+    button{
+        position: relative;
+        top: -80px;
+        left: 0;
+    }
 }
 /* Custom scrollbar styles */
 

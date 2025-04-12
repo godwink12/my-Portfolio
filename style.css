@@ -128,35 +128,6 @@ nav {
     transition: .5s;
 }
 
-/*----- Skills------*/
-
-.skills{
-    justify-content: center;
-    margin: 9em;
-}
-
-.skills h1{
-    font-family: Major Mono Display;
-    font-size: 60px;
-    text-align: center;
-}
-
-.skillicon{
-     font-size: 60px;
-     text-align: center;
-     margin: 1em;
-}
-
-.skillicon:hover{
-    color: #6b51ca;
-    transition: .5s;
-}
-
-hr{
-    width: 70%;
-    border-radius: 50px;
-    border: 2px solid;
-}
 
 
 /*-----project part-----*/
@@ -273,7 +244,7 @@ hr{
     padding: .4em;
     font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align:center;
+    text-align: center;
     font-weight: lighter;
     color: rgb(172, 169, 169);
 }
@@ -285,7 +256,7 @@ hr{
     text-align: center;
 }
 
-.second h1{
+.second h1 {
     margin: .5em;
     font-size: 15px;
     font-family: Major Mono Display;
@@ -348,7 +319,7 @@ hr{
     font-family: Major Mono Display;
 }
 
-.third h1{
+.third h1 {
     margin: .5em;
     font-size: 15px;
     font-family: Major Mono Display;
@@ -365,19 +336,15 @@ hr{
 /*------footer------*/
 
 footer {
-    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 10px;
-    background-color: linear-gradient (135deg, rgba(230, 11, 153, 0.1), rgba(169, 10, 242, 0));
-    border: 1px solid rgba(151, 25, 189, 0.18);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
-    position: relative;
-    top: 250px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    bottom: 0;
+    left: 0;
 
 }
 
@@ -417,7 +384,7 @@ figcaption {
 }
 
 
-.skillicon{
+.skillicon {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -440,7 +407,7 @@ figcaption {
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
- 
+
 .main-experience h2 {
     animation: slide linear;
     animation-timeline: view();
@@ -469,10 +436,25 @@ figcaption {
         left: 299px;
     }
 
+    .main-about {
+        position: relative;
+        top: 50px;
+        left: 40px;
+        margin: .5em;
+        padding: 5em;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        border-radius: 150px 20px;
+        background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+    }
+
     .about-content h2 {
         font-size: 20px;
         font-family: Major Mono Display;
         text-align: left;
+        animation: none;
     }
 
     .about-content p {
@@ -480,18 +462,71 @@ figcaption {
         text-align: left;
     }
 
-    .main-experience h2 {
-        text-align: left;
-        font-size: 30px;
-        font-weight: lighter;
-        font-family: Major Mono Display;
+    .main-experience {
+        margin-right: 0;
     }
 
-    .main-experience h1 {
-        text-align: left;
-        font-size: 30px;
-        font-weight: bold;
-        font-family: Major Mono Display;
+    .main-experience h2 {
+        position: relative;
+        left: 45px;
+        animation: none;
+    }
+
+    .second {
+        width: fit-content;
+        position: relative;
+        left: -95px;
+    }
+
+    .second h6 {
+        font-size: 20px;
+    }
+
+    .second h3 {
+        font-size: 20px;
+    }
+
+    .second p {
+        font-size: 20px;
+    }
+
+    .second h1 {
+        font-size: 20px;
+    }
+
+
+
+    .third {
+        width: fit-content;
+        position: relative;
+        left: -78px;
+    }
+
+    .third h6 {
+        font-size: 25px;
+    }
+
+    .third h3 {
+        font-size: 25px;
+    }
+
+
+    .third p {
+        font-size: 20px;
+    }
+
+    .third h1 {
+        font-size: 25px;
+    }
+
+    .third:hover {
+        transition: .5s;
+        background-color: rgb(90, 12, 216);
+    }
+
+    .top-header {
+        position: relative;
+        left: 50px;
     }
 
     .top-header h1 {
@@ -522,18 +557,19 @@ figcaption {
         font-size: 30px;
         font-family: Major Mono Display;
     }
-   
-    .project-container{
+
+    .project-container {
         position: relative;
-        left: 80px;
+        left: 120px;
         width: 30%;
-        display:flow-root;
+        display: flow-root;
         justify-content: center;
         margin: 50px;
     }
 
     .project-box {
         position: relative;
+        left: -55px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -545,10 +581,11 @@ figcaption {
         box-shadow: 1px 8px 10px 2px var(--first-shadow);
         overflow: hidden;
         cursor: pointer;
+        animation: none;
     }
-     
-    .main-about{
-       align-items: center;
+
+    .main-about {
+        align-items: center;
     }
 
 }
@@ -561,7 +598,7 @@ figcaption {
 
     .logo {
         position: relative;
-        left: 55px;
+        left: 85px;
     }
 
     .about-content h2 {
@@ -573,6 +610,7 @@ figcaption {
     .main-about {
         position: relative;
         top: 50px;
+        left: 50px;
         margin: .5em;
         padding: 5em;
         border: 2px solid rgba(255, 255, 255, 0.18);
@@ -589,19 +627,27 @@ figcaption {
         text-align: left;
     }
 
+    .top-header {
+        position: relative;
+        left: 50px;
+    }
+
     .top-header h1 {
         text-align: center;
         font-size: 30px;
         font-family: Major Mono Display;
     }
 
+    .project-container {
+        position: relative;
+        left: 120px;
+    }
+
     .project-box {
         position: relative;
-        justify-content: center;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        width: 30%;
+        width: -50px;
         height: 250px;
         background: transparent;
         border: 2px solid #201f22;
@@ -609,7 +655,74 @@ figcaption {
         box-shadow: 1px 8px 10px 2px var(--first-shadow);
         overflow: hidden;
         cursor: pointer;
-        
+
+    }
+
+    .main-experience {
+        margin-right: 0;
+    }
+
+    .main-experience h2 {
+        position: relative;
+        left:  60px
+
+    }
+
+    .second {
+        width: fit-content;
+        position: relative;
+        left: -60px;
+        margin: 9em;
+    }
+
+    .second h6 {
+        font-size: 20px;
+    }
+
+    .second h3 {
+        font-size: 20px;
+    }
+
+    .second p {
+        font-size: 20px;
+    }
+
+    .second h1 {
+        font-size: 20px;
+    }
+
+
+
+    .third {
+        width: fit-content;
+        position: relative;
+        left: -50px;
+    }
+
+    .third h6 {
+        font-size: 25px;
+    }
+
+    .third h3 {
+        font-size: 25px;
+    }
+
+
+    .third p {
+        font-size: 20px;
+    }
+
+    .third h1 {
+        font-size: 25px;
+    }
+
+    .third:hover {
+        transition: .5s;
+        background-color: rgb(90, 12, 216);
+    }
+
+    footer {
+        width: 127%;
     }
 }
 

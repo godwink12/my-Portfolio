@@ -196,6 +196,68 @@ footer p {
     animation-range: entry 0 cover 40%;
 }
 
+
+/* media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .navbar a {
+        margin-left: 10px;
+        font-size: 16px;
+        position: relative;
+        left: 358px;
+        top: -20px;
+        font-weight: bold;
+    }
+    
+    .explanation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container90 {
+        left: 150px;
+    }
+    
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .content {
+        left: 50px;
+        text-align: center;
+    }
+    
+    .main-about-graphic {
+        margin: 2em auto;
+        width: 90%;
+    }
+    
+    #img-gal {
+        left: 75px;
+        width: 100%;
+    }
+
+    .title h2 {
+        position: relative;
+        left: 60px;
+    }
+
+    footer{
+        width: 159%;
+    }
+}
+
 /* Custom scrollbar styles */
 
 ::-webkit-scrollbar {
