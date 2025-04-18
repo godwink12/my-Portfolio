@@ -23,8 +23,8 @@ https://godwink12.github.io/my-Portfolio/.
 
 ## Contact
 
-- **Email**: [your-email@example.com](mailto:godwinkadima1@gmail.com)
-- **GitHub**: [Your GitHub Profile](https://github.com/godwink12)
+- **Email**: godwinkadima1@gmail.com
+- **GitHub**: (https://github.com/godwink12)
 
 ---
 
