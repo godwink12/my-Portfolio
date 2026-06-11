@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -45,17 +46,17 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a {
     position: relative;
     font-size: 15px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     margin-left: 40px;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a::before {
@@ -85,28 +86,226 @@ nav {
 /*-----About part------*/
 
 .main-about {
-    position: relative;
-    top: 50px;
-    margin: 4em;
-    padding: 5em;
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    border-radius: 150px 20px;
-    background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+    scroll-margin-top: 100px;
+}
+
+.skl {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6b51ca;
+    border: 0.5px solid #6b51ca;
+    border-radius: 20px;
+    box-shadow: #6b51ca;
+    padding: 4px 12px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #6b51ca;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .about-content h2 {
-    font-size: 50px;
-    font-family: Major Mono Display;
+    font-size: 60px;
+    font-family: "Space Grotesk", sans-serif;
     text-align: left;
+}
+
+.about-content h2 span {
+    color: #6b51ca;
 }
 
 
 .about-content p {
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: lighter;
     text-align: left;
+    font-family: "Space Grotesk", sans-serif;
+    max-width: 550px;
+    color: #777;
+}
+
+
+button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fefefe;
+    background-color: transparent;
+    border: 0.5px solid #777;
+    border-radius: 6px;
+    box-shadow: #6b51ca;
+    padding: 6px;
+    margin-top: 17px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+hr {
+    border: 1px solid #535353;
+    margin-top: 30px;
+}
+
+/*----- Skills & tools -----*/
+.about-left {
+    margin: 50px;
+}
+
+.about-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.st {
+    margin: 0;
+    position: relative;
+    top: -290px;
+    left: 315px;
+}
+
+.st h5 {
+    position: relative;
+    top: -85px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #777;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 400px;
+}
+
+.python {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+.hc {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+.js {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+.c {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+.smt {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+.sql {
+    border: 0.5px solid #6b51ca;
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #13112a;
+    color: #AFA9EC;
+    padding: 10px;
+}
+
+/*----tools ---- */
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 400px;
+}
+
+
+.figma {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
+}
+
+.git {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
+}
+
+.ap {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
+}
+
+.ai {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
+}
+
+.ad {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
+}
+
+.sqlite {
+    border-radius: 6px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #888;
+    border: 0.5px solid #222;
+    background: #111;
+    padding: 10px;
 }
 
 /*------Social icon-----*/
@@ -115,12 +314,11 @@ nav {
     position: relative;
     top: 50px;
     font-size: 30px;
-    color: white;
-    text-align: center;
+    color: #444;
 }
 
 .social i {
-    color: white;
+    color: #444;
 }
 
 .social i:hover {
@@ -222,8 +420,12 @@ nav {
 }
 
 /*----experience----*/
-
-
+.main-experience {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
 
 .main-experience h2 {
     text-align: center;
@@ -664,8 +866,7 @@ figcaption {
 
     .main-experience h2 {
         position: relative;
-        left:  60px
-
+        left: 60px
     }
 
     .second {
