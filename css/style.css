@@ -511,6 +511,11 @@ hr {
   position: relative;
 }
 
+.exp-card:hover{
+    border: 0.5px solid #6b51ca;
+    transition: 0.5s;
+}
+
 .exp-card::before {
   content: '';
   position: absolute;
