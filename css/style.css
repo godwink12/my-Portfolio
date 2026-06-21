@@ -481,126 +481,142 @@ hr {
     margin: 40px;
 }
 
-.main-experience h2 span{
+.main-experience h2 span {
     color: #6b51ca;
 }
 
 .timeline {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-left: 28px;
-  gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 28px;
+    gap: 1.25rem;
 }
 
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 12px;
-  bottom: 12px;
-  width: 1.5px;
-  background: #2a2a2a;
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    bottom: 12px;
+    width: 1.5px;
+    background: #2a2a2a;
 }
 
 .exp-card {
-  background: #111;
-  border: 0.5px solid #1e1e1e;
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  position: relative;
+    background: #111;
+    border: 0.5px solid #1e1e1e;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    position: relative;
 }
 
-.exp-card:hover{
+.exp-card:hover {
     border: 0.5px solid #6b51ca;
     transition: 0.5s;
 }
 
 .exp-card::before {
-  content: '';
-  position: absolute;
-  left: -24px;
-  top: 18px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #7F77DD;
-  border: 2px solid #111;
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7F77DD;
+    border: 2px solid #111;
 }
 
 .exp-card.current::before {
-  background: #1D9E75;
+    background: #1D9E75;
 }
 
 .exp-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 0.5rem;
 }
 
 .exp-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
 }
 
-.exp-icon.purple { background: #EEEDFE; color: #534AB7; }
-.exp-icon.teal { background: #E1F5EE; color: #0F6E56; }
+.exp-icon.purple {
+    background: #EEEDFE;
+    color: #534AB7;
+}
 
-.exp-meta { flex: 1; }
+.exp-icon.teal {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+
+.exp-meta {
+    flex: 1;
+}
 
 .exp-company {
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .exp-role {
-  font-size: 13px;
-  color: #888;
+    font-size: 13px;
+    color: #888;
 }
 
 .exp-badge {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-weight: 500;
-  white-space: nowrap;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-.badge-present { background: #E1F5EE; color: #0F6E56; }
-.badge-past { background: #F1EFE8; color: #5F5E5A; }
+.badge-present {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+
+.badge-past {
+    background: #F1EFE8;
+    color: #5F5E5A;
+}
 
 .exp-date {
-  font-size: 12px;
-  color: #777;
-  margin-top: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .exp-tags {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-top: 0.75rem;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
 }
 
 .tag {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 20px;
-  background: #1a1a1a;
-  color: #aaa;
-  border: 0.5px solid #2a2a2a;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #1a1a1a;
+    color: #aaa;
+    border: 0.5px solid #2a2a2a;
 }
 
 
@@ -711,94 +727,15 @@ figcaption {
         left: 299px;
     }
 
-    .main-about {
+    .about-right {
         position: relative;
-        top: 50px;
-        left: 40px;
-        margin: .5em;
-        padding: 5em;
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        border-radius: 150px 20px;
-        background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
+        top: 340px;
+        left: -340px;
+        margin: 40px;
+        padding: 60px;
     }
 
-    .about-content h2 {
-        font-size: 20px;
-        font-family: Major Mono Display;
-        text-align: left;
-        animation: none;
-    }
-
-    .about-content p {
-        font-size: 15px;
-        text-align: left;
-    }
-
-    .main-experience {
-        margin-right: 0;
-    }
-
-    .main-experience h2 {
-        position: relative;
-        left: 45px;
-        animation: none;
-    }
-
-    .second {
-        width: fit-content;
-        position: relative;
-        left: -95px;
-    }
-
-    .second h6 {
-        font-size: 20px;
-    }
-
-    .second h3 {
-        font-size: 20px;
-    }
-
-    .second p {
-        font-size: 20px;
-    }
-
-    .second h1 {
-        font-size: 20px;
-    }
-
-
-
-    .third {
-        width: fit-content;
-        position: relative;
-        left: -78px;
-    }
-
-    .third h6 {
-        font-size: 25px;
-    }
-
-    .third h3 {
-        font-size: 25px;
-    }
-
-
-    .third p {
-        font-size: 20px;
-    }
-
-    .third h1 {
-        font-size: 25px;
-    }
-
-    .third:hover {
-        transition: .5s;
-        background-color: rgb(90, 12, 216);
-    }
-
+   
     .top-header {
         position: relative;
         left: 50px;
@@ -812,7 +749,11 @@ figcaption {
 
     .logo {
         position: relative;
-        left: 80px;
+        left: 159px;
+    }
+
+    .logo span{
+        color: #6b51ca;
     }
 
     .LOGO {
@@ -849,15 +790,24 @@ figcaption {
         justify-content: center;
         flex-direction: column;
         width: 200%;
-        height: 250px;
+        height: 100%;
         background: transparent;
         border: 2px solid #201f22;
         border-radius: 20px;
         box-shadow: 1px 8px 10px 2px var(--first-shadow);
-        overflow: hidden;
         cursor: pointer;
-        animation: none;
     }
+
+    .projecttitle{
+        position: relative;
+        left: -90px;
+    }
+
+    .top-header {
+        display: flex;
+        max-width: 550px;
+    }
+
 
     .main-about {
         align-items: center;
