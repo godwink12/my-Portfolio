@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -44,7 +45,7 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a {
@@ -54,7 +55,7 @@ nav {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 
@@ -79,18 +80,18 @@ nav {
 /*-----graphic design section-----*/
 
 
-.LOGO {
-    text-align: center;
-    margin: 9em;
-    padding-right: -9em;
-    position: relative;
-    left: -180px;
-    display: flex;
-    align-items: center;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.LOGO h1 {
-    font-family: Major Mono Display;
+.projects-grid h1 {
+    font-family: "Space Grotesk", sans-serif;
     display: inline;
     position: relative;
     top: -150px;
@@ -129,37 +130,45 @@ nav {
 
 
 @keyframes slide {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    25%{
+
+    25% {
         transform: translateX(0);
     }
-    30%{
+
+    30% {
         transform: translateX(-100%);
     }
-    50%{
+
+    50% {
         transform: translateX(-100%);
     }
-    50%{
+
+    50% {
         transform: translateX(-100%);
     }
-    55%{
+
+    55% {
         transform: translateX(-200%);
     }
-    75%{
+
+    75% {
         transform: translateX(-200%);
     }
-    80%{
+
+    80% {
         transform: translateX(-300%);
     }
-    100%{
+
+    100% {
         transform: translateX(-300%);
     }
 }
 
 
-.container23{
+.container23 {
     margin-top: 88px;
 
 }
@@ -173,76 +182,72 @@ nav {
 }
 
 .container1 {
-    margin: .5em;
-    position: relative;
-    left: 50px;
-    width: 550px;
-}
-
-
-.container2 {
-    margin: 1em;
-    position: relative;
-    left: 50px;
-    width: 550px;
-}
-
-.container3 {
-    margin: .5em;
-    position: relative;
-    left: 50px;
-    width: 550px;
-}
-
-.images {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 280px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    flex: 1 0 100%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(29, 20, 35, 0.6);
-    color: #fff;
-    font-family: Source code pro;
+    background: #111;
+    border: 0.5px solid #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.container1:hover {
+    border: 1px solid #6b51ca;
+    transition: 0.5s;
+}
+
+
+.container1 p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+    font-weight: 300;
+    text-align: left;
+    margin: 40px;
+}
+
+.card-image {
+    background: #F1EFE8;
+    padding: 1.5rem;
     display: flex;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
 }
 
-.overlay--blur {
-    backdrop-filter: blur(5px);
+
+
+.images {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
 }
 
-.overlay>* {
-    transform: translate(20px);
-    transition: transform 0.25s;
+.card-body {
+    padding: 1.5rem;
 }
 
-.overlay:hover {
-    opacity: 1;
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #AFA9EC;
+    background: #13112a;
+    border: 0.5px solid #3C3489;
+    border-radius: 8px;
+    padding: 8px 14px;
+    text-decoration: none;
+    margin-bottom: 30px;
 }
 
-.overlay:hover>* {
-    transform: translate(0);
-}
+
 
 .img-title {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Major Mono Display;
+    text-align: left;
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
 }
 
 .img-description {
@@ -254,17 +259,6 @@ nav {
     color: #fff5f5;
     font-family: Ubuntu;
     text-decoration: none;
-}
-
-.img-description a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #6b51ca;
-    transition: .3s;
 }
 
 .img-description a:hover::before {
