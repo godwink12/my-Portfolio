@@ -832,35 +832,14 @@ figcaption {
         text-align: left;
     }
 
-    .main-about {
+
+
+    .about-right {
         position: relative;
-        top: 50px;
-        left: 50px;
-        margin: .5em;
-        padding: 5em;
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        border-radius: 150px 20px;
-        background-color: linear-gradient (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 8px 32px rgba(107, 81, 202, 0.37);
-    }
-
-
-    .about-content p {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .top-header {
-        position: relative;
-        left: 50px;
-    }
-
-    .top-header h1 {
-        text-align: center;
-        font-size: 30px;
-        font-family: Major Mono Display;
+        top: 340px;
+        left: -290px;
+        margin: 40px;
+        padding: 60px;
     }
 
     .project-container {
@@ -872,78 +851,29 @@ figcaption {
         position: relative;
         display: flex;
         flex-direction: column;
-        width: -50px;
-        height: 250px;
+        height: 100%;
         background: transparent;
         border: 2px solid #201f22;
         border-radius: 20px;
         box-shadow: 1px 8px 10px 2px var(--first-shadow);
-        overflow: hidden;
         cursor: pointer;
 
+    }
+
+    .projecttitle{
+        position: relative;
+        left: 50px;
     }
 
     .main-experience {
         margin-right: 0;
     }
 
-    .main-experience h2 {
-        position: relative;
-        left: 60px
-    }
-
-    .second {
+    .exp-card{
         width: fit-content;
-        position: relative;
-        left: -60px;
-        margin: 9em;
+        height: 100%;
     }
 
-    .second h6 {
-        font-size: 20px;
-    }
-
-    .second h3 {
-        font-size: 20px;
-    }
-
-    .second p {
-        font-size: 20px;
-    }
-
-    .second h1 {
-        font-size: 20px;
-    }
-
-
-
-    .third {
-        width: fit-content;
-        position: relative;
-        left: -50px;
-    }
-
-    .third h6 {
-        font-size: 25px;
-    }
-
-    .third h3 {
-        font-size: 25px;
-    }
-
-
-    .third p {
-        font-size: 20px;
-    }
-
-    .third h1 {
-        font-size: 25px;
-    }
-
-    .third:hover {
-        transition: .5s;
-        background-color: rgb(90, 12, 216);
-    }
 
     footer {
         width: 127%;
