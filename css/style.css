@@ -735,16 +735,10 @@ figcaption {
         padding: 60px;
     }
 
-   
+
     .top-header {
         position: relative;
         left: 50px;
-    }
-
-    .top-header h1 {
-        text-align: center;
-        font-size: 30px;
-        font-family: Major Mono Display;
     }
 
     .logo {
@@ -752,7 +746,7 @@ figcaption {
         left: 159px;
     }
 
-    .logo span{
+    .logo span {
         color: #6b51ca;
     }
 
@@ -771,7 +765,6 @@ figcaption {
         top: 95px;
         left: 195px;
         font-size: 30px;
-        font-family: Major Mono Display;
     }
 
     .project-container {
@@ -798,7 +791,7 @@ figcaption {
         cursor: pointer;
     }
 
-    .projecttitle{
+    .projecttitle {
         position: relative;
         left: -90px;
     }
@@ -808,6 +801,10 @@ figcaption {
         max-width: 550px;
     }
 
+    .exp-card {
+        width: fit-content;
+        height: 100%;
+    }
 
     .main-about {
         align-items: center;
@@ -815,8 +812,103 @@ figcaption {
 
 }
 
+@media (max-width:600px) {
+    .container {
+        display: none;
+    }
 
-@media (max-width:400px) {
+    .logo {
+        position: relative;
+        left: 299px;
+    }
+
+    .about-right {
+        position: relative;
+        top: 340px;
+        left: -340px;
+        margin: 40px;
+        padding: 60px;
+    }
+
+
+    .top-header {
+        position: relative;
+        left: 50px;
+    }
+
+    .logo {
+        position: relative;
+        left: 159px;
+    }
+
+    .logo span {
+        color: #6b51ca;
+    }
+
+    .LOGO {
+        text-align: center;
+        margin: 9em;
+        padding-right: -9em;
+        position: relative;
+        left: -180px;
+        display: block;
+        align-items: center;
+    }
+
+    .title {
+        position: relative;
+        top: 95px;
+        left: 195px;
+        font-size: 30px;
+    }
+
+    .project-container {
+        position: relative;
+        left: 120px;
+        width: 30%;
+        display: flow-root;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .project-box {
+        position: relative;
+        left: -55px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid #201f22;
+        border-radius: 20px;
+        box-shadow: 1px 8px 10px 2px var(--first-shadow);
+        cursor: pointer;
+    }
+
+    .projecttitle {
+        position: relative;
+        left: -90px;
+    }
+
+    .top-header {
+        display: flex;
+        max-width: 550px;
+    }
+
+    .exp-card {
+        width: fit-content;
+        height: 100%;
+    }
+
+    .main-about {
+        align-items: center;
+    }
+}
+
+
+@media (max-width:430px) {
+
     .container {
         display: none;
     }
@@ -826,13 +918,16 @@ figcaption {
         left: 85px;
     }
 
+
+    .logo span {
+        color: #6b51ca;
+    }
+
     .about-content h2 {
         font-size: 20px;
         font-family: Major Mono Display;
         text-align: left;
     }
-
-
 
     .about-right {
         position: relative;
@@ -860,7 +955,7 @@ figcaption {
 
     }
 
-    .projecttitle{
+    .projecttitle {
         position: relative;
         left: 50px;
     }
@@ -869,7 +964,75 @@ figcaption {
         margin-right: 0;
     }
 
-    .exp-card{
+    .exp-card {
+        width: fit-content;
+        height: 100%;
+    }
+
+
+    footer {
+        width: 127%;
+    }
+}
+
+
+@media (max-width:400px) {
+    .container{
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        left: 85px;
+    }
+
+
+    .logo span {
+        color: #6b51ca;
+    }
+
+    .about-content h2 {
+        font-size: 20px;
+        font-family: Major Mono Display;
+        text-align: left;
+    }
+
+    .about-right {
+        position: relative;
+        top: 340px;
+        left: -290px;
+        margin: 40px;
+        padding: 60px;
+    }
+
+    .project-container {
+        position: relative;
+        left: 120px;
+    }
+
+    .project-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: transparent;
+        border: 2px solid #201f22;
+        border-radius: 20px;
+        box-shadow: 1px 8px 10px 2px var(--first-shadow);
+        cursor: pointer;
+
+    }
+
+    .projecttitle {
+        position: relative;
+        left: 50px;
+    }
+
+    .main-experience {
+        margin-right: 0;
+    }
+
+    .exp-card {
         width: fit-content;
         height: 100%;
     }
