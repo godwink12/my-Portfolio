@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="/img/G.jpg">
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="stylesheet" href="css/webdev.css">
     <title>Web development</title>
 </head>
@@ -21,57 +24,101 @@
         </nav>
     </header>
 
-    <section>
-        <div class="title">
-            <h1>WEB <span>PROJECT</span></h1>
+    <section class="section" id="projects">
+        <div class="projecttitle">
+            <h1><span>P</span>rojects</h1>
         </div>
-    </section>
-
-    <section>
-        <div class="projects-grid">
-            <div class="container1">
-                <div class="card-image">
-                    <img class="images" src="img/Minisiter international des Ames.png " alt="hotsips">
+        <div class="top-header">
+            <p>Things I've built during my free time and for clients — each one a step forward in my design and
+                development journey.</p>
+        </div>
+        <div class="project-container ">
+            <div class="project-box">
+                <i class="devicon-python-plain"></i>
+                <i class="devicon-mysql-plain"></i>
+                <h3>Multi-Domain Platform</h3>
+                <p>A Python-based multi-domain tool handling data validation, user auth with SQLite, and a clean
+                    dashboard UI.</p>
+                <div class="skills">
+                    <div class="python"> Python </div>
+                    <div class="smt">streamlit</div>
+                    <div class="sql">MySQL</div>
                 </div>
-                <div class="img-title"> Ministère International des Âmes </div>
-                <p> Ministère International des Âmes a non-profit association (ASBL) with an evangelical mission, known
+                <button class="btn">
+                    <a href="https://github.com/godwink12/Multi-Domain-Platform">Github🡽</a>
+                </button>
+            </div>
+
+            <div class="project-box">
+                <i class="uil uil-html5"></i>
+                <h3>Ministère International des Âmes</h3>
+                <p>Ministère International des Âmes a non-profit association (ASBL) with an evangelical mission, known
                     as Souls International Ministry (SIM), or in French, Ministère International des Âmes (MIA).
                     In this I was help By A friend to build this together as he is more advanced.
                 </p>
-                <button class="btn">
-                    <a href="https://github.com/dankerow/mia-gospel">Github 🡥</a>
-                </button>
-                <button class="btn">
-                    <a href="https://miagospel.org/en">Live 🡥</a>
-                </button>
-            </div>
-
-
-
-            <div class="container1">
-                <div class="card-image">
-                    <img class="images" src="img/GodwinPortfolio.png" alt="hotsips">
+                <div class="skills">
+                    <div class="hc">Css</div>
+                    <div class="js">Vue.js</div>
+                    <div class="js">javascript</div>
+                    <div class="python"> Typescript </div>
                 </div>
-                <div class="img-title">Godwin Porfolio website </div>
-                <p>Welcome to my personal portfolio repository! This project showcases my skills, projects, and
-                    achievements as a developer.
-                </p>
+                <div class="vst">
+                    <button class="btn">
+                        <a href="https://github.com/dankerow/mia-gospel">Github 🡽</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://miagospel.org/en">Live 🡽</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <i class="devicon-python-plain"></i>
+                <h3>Number Guessing Game</h3>
+                <p>A Python-based interactive number guessing game featuring input validation and logic to track player
+                    attempts.</p>
+                <div class="skills">
+                    <div class="python"> Python </div>
+                </div>
                 <button class="btn">
-                    <a href="https://github.com/godwink12/my-Portfolio">Github 🡥</a>
-                </button>
-                <button class="btn">
-                    <a href="https://godwink12.github.io/my-Portfolio/">Live 🡥</a>
+                    <a href="https://github.com/godwink12/Number-Guessing-game-">Github 🡽</a>
                 </button>
             </div>
 
-
-
+            <div class="project-box">
+                <i class="uil uil-pen"></i>
+                <h3>Graphic Design</h3>
+                <p>A collection of visual design work including branding, social media content, and UI mockups made in
+                    Figma and Adobe Suite.</p>
+                <div class="tools">
+                    <div class="ap">Adobe Photoshop</div>
+                    <div class="ai">Adobe Illustrator</div>
+                    <div class="ad">Adobe Indesign</div>
+                </div>
+                <button class="btn" role="button">
+                    <a href="graphicdesign.html">View work🡽</a>
+                </button>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-pen"></i>
+                <h3>Simple Python Login System</h3>
+                <p>This project is a lightweight authentication script that allows users to register, login, and exit
+                    through a command-line interface. It focuses on core programming concepts including infinite loops,
+                    conditional logic, and data storage using Python dictionaries.</p>
+                <div class="tools">
+                    <div class="ap">Adobe Photoshop</div>
+                    <div class="ai">Adobe Illustrator</div>
+                    <div class="ad">Adobe Indesign</div>
+                </div>
+                <button class="btn" role="button">
+                    <a href="https://github.com/godwink12/python-login-system">Github🡽</a>
+                </button>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>Copyright &copy; Design and Developed By Godwin Kadima</p>
-    </footer>
+        <footer>
+            <p>Copyright &copy; Design and Developed By Godwin Kadima</p>
+        </footer>
 </body>
 
 </html>

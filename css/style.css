@@ -456,6 +456,7 @@ hr {
 
 .btn {
     font-size: 14px;
+    font-weight: bold;
     size: 10px;
     border: 1px solid transparent;
     background-color: transparent;
