@@ -369,6 +369,7 @@ hr {
     font-family: "Space Grotesk", sans-serif;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .top-header p {
@@ -387,6 +388,9 @@ hr {
     gap: 20px;
     padding: 40px;
     align-items: stretch;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .project-box {
@@ -981,6 +985,9 @@ figcaption {
     }
 }
 
+@media only screen and (max-width: 402px) {
+    
+}
 
 @media (max-width:400px) {
     .container {
