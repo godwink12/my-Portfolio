@@ -207,7 +207,6 @@ nav {
 
 .card-image {
     background: #F1EFE8;
-    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +217,7 @@ nav {
 .images {
     width: 100%;
     max-height: 180px;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .card-body {
