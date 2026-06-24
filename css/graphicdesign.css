@@ -288,111 +288,89 @@ footer p {
 
 /*------ media screen---*/
 
-@media (max-width:839px) {
+@media (max-width: 839px) {
 
-    * {
-        padding: .5em;
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .logo {
-        position: relative;
-        left: -90px;
+        position: static;
+        font-size: 24px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar a {
+        margin: 0;
+        font-size: 15px;
     }
 
     .LOGO {
+        position: static;
         text-align: center;
-        position: relative;
-        left: -275px;
-        display: block;
-        align-items: center;
     }
 
     .title {
-        position: relative;
-        top: 95px;
-        left: -85px;
-        font-family: Major Mono Display;
+        position: static;
+        text-align: center;
+        margin-top: 100px;
     }
 
     .title h1 {
         text-align: center;
     }
 
-    .navbar a {
-        font-size: 20px;
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 
+    .projects-grid h1 {
+        position: static;
+        text-align: center;
     }
 
     .container {
-        margin: .5em;
-        flex-wrap: wrap;
-        display: inline-block;
-        position: relative;
-        left: 50px;
-        width: 550px;
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        margin: 20px auto;
     }
 
-
     .container2 {
-        margin: .5em;
-        display: inline-block;
-        position: relative;
-        left: 50px;
-        width: 550px;
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        margin: 20px auto;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
     }
 
     .overlay {
-        position: absolute;
-        top: 0;
-        left: 139px;
-        width: 51%;
-        height: 100%;
-        background: rgba(29, 20, 35, 0.6);
-        color: #fff;
-        font-family: Source code pro;
-        display: flex;
-        border: 1px solid transparent;
-        border-radius: 20px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.25s;
-    }
-
-    .overlay--blur {
-        backdrop-filter: blur(5px);
-    }
-
-    .overlay>* {
-        transform: translate(20px);
-        transition: transform 0.25s;
-    }
-
-    .overlay:hover {
-        opacity: 1;
-    }
-
-    .overlay:hover>* {
-        transform: translate(0);
+        display: none;
     }
 
     footer {
-        padding-bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60px;
+        position: static;
         width: 100%;
-        background-color: rgb(10, 10, 10);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-
-
+        height: auto;
+        padding: 15px;
     }
-
-
 }
 
 /* Custom scrollbar styles */
