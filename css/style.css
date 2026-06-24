@@ -83,6 +83,10 @@ nav {
     font-size: 30px;
 }
 
+.logo span{
+    color: #6b51ca;
+}
+
 /*-----About part------*/
 
 .main-about {

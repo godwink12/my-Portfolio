@@ -44,7 +44,11 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.logo span{
+    color: #6b51ca;
 }
 
 .navbar a {
@@ -54,7 +58,7 @@ nav {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a::before {
@@ -72,46 +76,140 @@ nav {
     width: 100%;
 }
 
-.container1{
+
+.title {
+    text-align: left;
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    margin: 50px;
+    padding: 50px;
+    padding-top: 50px;
 }
 
-.MIA {
-    width: 399px;
-    height: 190px;
-    align-items: center;
-    border-radius: 30px;
+.title span{
+    color: #6b51ca;
+}
+
+
+/*---- web presentation -----*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.projects-grid h1 {
+    font-family: "Space Grotesk", sans-serif;
+    display: inline;
     position: relative;
-    top: 190px;
-    left: 10px;
-}
-
-button {
-    border-radius: 10px;
-    border: 1px solid #6b51ca;
-    background: transparent;
-    color: #fff;
-    width: 85px;
-    height: 45px;
-    margin: .9em;
-    position: relative;
-    top: 230px;
-    left: -265px;
-}
-
-button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    top: -150px;
+    left: 790px;
     text-align: center;
 }
 
-button:hover {
-    background-color: #6b51ca;
-
+.container {
+    margin: .5em;
+    position: relative;
+    left: 50px;
+    width: 550px;
+    justify-content: space-between;
 }
+
+.container1 {
+    width: 100%;
+    background: #111;
+    border: 0.5px solid #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.container1:hover {
+    border: 1px solid #6b51ca;
+    transition: 0.5s;
+}
+
+
+.container1 p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+    font-weight: 300;
+    text-align: left;
+    margin: 40px;
+}
+
+.card-image {
+    background: #F1EFE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.images {
+    width: 100%;
+    max-height: 180px;
+    object-fit: fill;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+
+.img-title {
+    text-align: left;
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.img-description {
+    font-size: 1.25em;
+    margin: 0.25em;
+}
+
+.web-link {
+    color: #fff5f5;
+    font-family: Ubuntu;
+    text-decoration: none;
+}
+
+.img-description a:hover::before {
+    width: 100%;
+}
+
+
+
+.btn {
+    font-size: 14px;
+    size: 10px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.btn a {
+    color: #666;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: #6b51ca;
+    transition: 0.5s;
+}
+
 
 /*------footer------*/
 
@@ -123,10 +221,10 @@ footer {
     height: 50px;
     width: 100%;
     background-color: rgb(10, 10, 10);
-    position: fixed;
     bottom: 0;
     left: 0;
-   
+    margin-top: 50px;
+
 }
 
 footer p {
@@ -136,20 +234,21 @@ footer p {
 
 /*----- media screen------*/
 @media (max-width:830px) {
-    
-    .container1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 50px;
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
     }
 
-    button{
+    button {
         position: relative;
         top: -80px;
         left: 0;
     }
 }
+
 /* Custom scrollbar styles */
 
 ::-webkit-scrollbar {
