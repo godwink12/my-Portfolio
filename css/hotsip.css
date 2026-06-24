@@ -17,6 +17,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    animation: fadeIn 0.8s ease;
 }
 
 html {
@@ -323,3 +324,11 @@ footer p {
     /* Color when hovering */
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -16,6 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    animation: fadeIn 0.8s ease;
 }
 
 html {
@@ -274,4 +275,14 @@ footer p {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
     /* Color when hovering */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
