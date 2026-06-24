@@ -47,7 +47,7 @@ nav {
     font-family: "Space Grotesk", sans-serif;
 }
 
-.logo span{
+.logo span {
     color: #6b51ca;
 }
 
@@ -88,7 +88,7 @@ nav {
     padding-top: 50px;
 }
 
-.title span{
+.title span {
     color: #6b51ca;
 }
 
@@ -236,17 +236,23 @@ footer p {
 @media (max-width:830px) {
 
     .container1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 50px;
+        width: 100%;
+        background: #111;
+        border: 0.5px solid #1e1e1e;
+        border-radius: 16px;
+        overflow: hidden;
+        font-family: "Space Grotesk", sans-serif;
     }
 
-    button {
-        position: relative;
-        top: -80px;
-        left: 0;
+    .btn {
+        font-size: 14px;
+        size: 10px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 40px;
     }
+
 }
 
 /* Custom scrollbar styles */
