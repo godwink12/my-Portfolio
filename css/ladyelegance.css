@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -44,7 +45,11 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.logo span{
+    color: #6b51ca;
 }
 
 .navbar a {
@@ -54,7 +59,7 @@ nav {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a::before {
@@ -101,7 +106,7 @@ img {
 
 .content h1 {
     margin: .5em;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .content p {
@@ -129,7 +134,7 @@ img {
     font-size: 40px;
     text-align: center;
     margin: 1em;
-    font-family: Major Mono Display;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 footer {
@@ -154,61 +159,99 @@ footer p {
 /* media queries for responsiveness */
 
 @media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .main-header {
-        padding: 20px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .logo {
-        font-size: 24px;
-    }
-    
-    .navbar a {
-        margin-left: 10px;
-        font-size: 16px;
-        position: relative;
-        left: 358px;
-        top: -20px;
-        font-weight: bold;
-    }
-    
-    .explanation {
+        padding: 15px 20px;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
-    
-    .container90 {
-        left: 150px;
-    }
-    
-    img {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .content {
-        left: 50px;
+
+    .logo {
+        font-size: 24px;
         text-align: center;
     }
-    
-    .main-about-graphic {
-        margin: 2em auto;
-        width: 90%;
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
-    
-    #img-gal {
-        left: 105px;
+
+    .navbar a {
+        position: static;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .explanation {
+        flex-direction: column;
+        height: auto;
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
+
+    .container90 {
         width: 100%;
+        position: static;
+    }
+
+    img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content {
+        width: 100%;
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .content h1 {
+        margin: 0 0 15px;
+        font-size: 28px;
+    }
+
+    .content p {
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .main-about-graphic {
+        width: 95%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    #img-gal {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery {
+        position: static;
     }
 
     .title h2 {
-        position: relative;
-        left: 105px;
+        position: static;
+        font-size: 28px;
+        margin: 20px 0;
     }
 
-    footer{
-        width: 159%;
+    footer {
+        width: 100%;
     }
 }
 
