@@ -139,7 +139,7 @@ nav {
     text-align: left;
     font-family: "Space Grotesk", sans-serif;
     max-width: 550px;
-    color: #777;
+    color: #bab9b9;
 }
 
 
@@ -147,9 +147,9 @@ nav {
     display: inline-flex;
     align-items: center;
     font-size: 18px;
-    color: #fefefe;
+    color: #bab9b9;
     background-color: transparent;
-    border: 0.5px solid #777;
+    border: 0.5px solid #bab9b9;
     border-radius: 6px;
     box-shadow: #6b51ca;
     padding: 6px;
@@ -164,12 +164,12 @@ nav {
 }
 
 .vm a {
-    color: #666;
+    color: #bab9b9;
     text-decoration: none;
 }
 
 .vm a:hover {
-    color: #ffffff;
+    color: #bab9b9;
 }
 
 hr {
@@ -201,7 +201,7 @@ hr {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
     font-weight: lighter;
-    color: #777;
+    color: #bab9b9;
 }
 
 .skills {
@@ -426,7 +426,7 @@ hr {
     font-family: "Space Grotesk", sans-serif;
     font-size: 13px;
     font-weight: 300;
-    color: #666;
+    color: #bab9b9;
     line-height: 1.6;
     text-align: left;
 }
@@ -480,7 +480,7 @@ hr {
     border: 0.5px solid #534AB7;
 }
 .btn2 a {
-    color: #666;
+    color: #bab9b9;
     text-decoration: none;
 }
 
@@ -490,7 +490,7 @@ hr {
 }
 
 .btn a {
-    color: #666;
+    color: #bab9b9;
     text-decoration: none;
 }
 
