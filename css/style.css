@@ -501,13 +501,11 @@ hr {
 
 /*----experience----*/
 .main-experience {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    margin: 60px;
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
     padding: 60px;
-    max-width: 400%;
+    position: relative;
 }
 
 
