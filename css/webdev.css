@@ -445,6 +445,9 @@ footer p {
         padding: 40px;
     }
 
+    .project-box h3{
+        font-size: 17px;
+    }
 }
 
 /* Custom scrollbar styles */
